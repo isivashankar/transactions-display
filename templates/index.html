@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Transactions</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: left;margin:0">Transactions</h1>
+    <p style="text-align: left;margin: 0 0 10px; font-size: x-small;">View summary and details of your transactions here</p>
+    <div style="margin: 10px 0;display: inline-block">
+        <!-- <input type="text" id="mySearch" placeholder="Search.." style="float: left;" title="Type in a category">
+        <button style="float: right;">Filter</button> -->
+        <button style="float: right;margin-left: 10px;" onclick="onBtnExport()">Export</button>
+    </div>
+    <div style="height: 85vh; box-sizing: border-box;">
+        <div id="myGrid" style="height: 80vh; width:90vw;" class="ag-theme-alpine"></div>
+    </div>
+
+</div>
+{% endblock %}
